@@ -1,124 +1,140 @@
 # Impact of Exam Period on Daily Habits  
-### A Time-Series Exploratory Data Analysis
+## A Time-Series Exploratory Data Analysis
 
-## Project Overview
-During semester examination periods, students often significantly alter their daily routines — increasing study hours while compromising sleep, leisure, and physical activity. This project analyzes one month of self-tracked daily habit data (November 2025, a semester exam month) to understand how exam-driven study intensity impacts sleep, screen time, exercise, and overall lifestyle balance.
+## 📌 Project Overview
+During semester examination periods, students often restructure their daily routines — increasing exam-focused study while attempting to balance sleep, leisure, and long-term learning goals. This project analyzes one month of self-tracked daily habit data (November 2025, a semester exam month) to understand how exam pressure influences productivity, recovery, and leisure behavior.
 
-The goal of this project is to apply structured data analytics techniques to a real-world dataset and extract meaningful behavioral insights through exploratory data analysis (EDA) and visual storytelling.
+The project applies structured data analytics techniques to a real-world dataset, emphasizing exploratory data analysis (EDA), feature engineering, and calendar-aware trend analysis.
 
 ---
 
-## Problem Statement
-How does an exam-heavy academic period affect daily habits such as sleep, screen time, study duration, and exercise?
+## 🎯 Problem Statement
+How does an exam-heavy academic period affect the balance between:
+- **Exam preparation (curriculum study)**,
+- **Long-term skill development (online course study)**,
+- **Sleep (recovery)**, and
+- **Leisure (non-productive screen time)**?
 
 Specifically:
-- Do increased study hours correlate with reduced sleep or higher screen time?
-- How do habits vary across exam and non-exam days?
-- Are there observable weekly trends during the exam month?
+- How do study patterns differ between exam days and non-exam days?
+- Does exam preparation crowd out sleep, leisure, or long-term learning?
+- Are there observable weekly trends in behavior during the exam month?
 - Which days appear most balanced versus most strained?
 
 ---
 
-## Dataset Description
+## 📊 Dataset Description
 
 - **Source:** Self-tracked data recorded using Google Sheets  
 - **Time Period:** November 2025 (30 days)  
 - **Granularity:** Daily  
-- **Context:** November was a semester examination month. Student uses phone/laptop to studying and course, so the screen time includes them both.
+- **Context:** Semester examination month  
 
 ### Tracked Variables
-- Sleep duration (hours)
-- Screen time (hours)
-- Course study hours
-- Curriculum study hours
+
+| Variable | Description |
+|--------|------------|
+| Sleep (hours) | Total daily sleep duration |
+| Course Study (hours) | Time spent learning an online course (long-term skill development) |
+| Curriculum Study (hours) | Time spent studying for semester exams |
+| Leisure (hours) | Non-productive screen time (entertainment, passive browsing, etc.) |
 
 ### Semester Exam Dates
-The following dates were semester examination days:
+The following dates were official semester examination days:
 - **November 14**
 - **November 15**
 - **November 17**
 - **November 19**
 - **November 29**
 
-These dates provide important contextual markers for interpreting behavioral changes.
+These dates are used as contextual markers for comparative analysis.
 
 ---
 
-## Tools & Technologies Used
+## 🧰 Tools & Technologies Used
 - **Google Sheets** – Data collection
 - **Python**
-  - NumPy – Data manipulation and statistical analysis
+  - NumPy – Data manipulation, statistics, and feature engineering
   - Matplotlib – Data visualization
 - **Calendar module** – Calendar-accurate weekly grouping
 
+This project aligns closely with the analytical workflow taught in the **Google Data Analytics Professional Certificate**.
+
 ---
 
-## Data Cleaning & Preparation
-Since, I recorded the data on my own, there weren't many irrelevant entries but still I followed the necessary data cleaning and pre-processing steps.
-The following steps were performed before analysis:
-- Exported data from Google Sheets as CSV
+## 🧹 Data Cleaning & Processing
+Several data processing steps were performed to improve analytical validity:
+- Exported raw data from Google Sheets to CSV format
+- Identified and corrected a mixed “screen time” variable by separating productive study time from non-productive leisure time
+- Removed unreliable exercise data due to inconsistent logging
+- Handled missing values by converting empty entries to NaN
+- Converted numeric columns to floating-point values
 - Extracted calendar day values for time-series and weekly analysis
-- Grouped data using calendar-based weeks instead of fixed intervals
+- Grouped data using calendar-based weeks rather than fixed intervals
+
+These steps ensured that the analysis accurately reflects meaningful behavioral patterns.
 
 ---
 
-## Exploratory Data Analysis (EDA)
+## 🔍 Exploratory Data Analysis (EDA)
 
 The analysis focuses on:
-- Descriptive statistics for each habit (mean, median, variance)
-- Day-to-day trends across the month
-- Correlation analysis between sleep, screen time and study hours
-- Comparison between high-sleep and low-sleep days
-- Identification of best and worst study days
+- Descriptive statistics for each habit
+- Daily time-series trends across the month
+- Comparison of exam days versus non-exam days
+- Correlation analysis between sleep, study types, and leisure
+- Identification of best and worst productivity days
 - Calendar-based weekly habit trends
+- Study efficiency analysis
+- Balance score analysis capturing trade-offs between productivity, recovery, and leisure
 
 ---
 
-## Visualizations
-The following visualizations were created to support insights:
+## 📈 Visualizations
+The following visualizations were created to support analytical insights:
 - Sleep duration trend over time
-- Study hours trend (course vs curriculum)
-- Screen time trend
+- Curriculum study (exam prep) vs course study trends
+- Leisure time trend
 - Study efficiency over time
-- Stacked bar chart of total study hours
+- Stacked bar chart of total productive study hours
 - Weekly averages based on calendar weeks
 
 Each visualization is designed to answer a specific analytical question and support data-driven storytelling.
 
 ---
 
-## Key Insights (Summary)
-Some high-level insights observed from the analysis include:
-- Study hours increased significantly during exam weeks, with higher variability in sleep duration.
-- High-sleep days were generally associated with lower screen time and improved study efficiency.
-- Screen time tended to spike on days with lower course study, suggesting possible fatigue or burnout.
-- Balance scores declined toward peak exam periods, indicating cumulative strain.
-- Weekly trends show the most intensive study load occurred mid-month, aligning with exam dates.
+## 💡 Key Insights (Summary)
+High-level insights observed from the analysis include:
+- Exam preparation hours increased significantly around exam dates, while online course study time showed greater variability.
+- Leisure time generally decreased during peak exam periods, suggesting intentional behavioral trade-offs.
+- High curriculum-study days were often associated with reduced sleep and lower leisure time.
+- Weeks with clustered exams showed the highest study intensity and the lowest balance scores.
+- Long-term learning (online course study) was deprioritized during peak exam stress, highlighting opportunity costs during short-term academic pressure.
 
-(*Detailed insights are supported by visualizations in the analysis script.*)
-
----
-
-## Limitations
-- Data represents a single individual and may not generalize broadly.
-- November is an exam-heavy month, which introduces seasonal bias.
-- Data is self-reported and subject to human error.
-- Academic performance outcomes (e.g., grades) were not included.
+(*Detailed insights are supported by visualizations and statistical outputs in the analysis scripts.*)
 
 ---
 
-## Future Improvements
+## ⚠️ Limitations
+- Dataset represents a single individual and may not generalize broadly.
+- November is an exam-heavy month, introducing seasonal bias.
+- Data is self-reported and subject to measurement error.
+- Academic performance outcomes (e.g., exam scores) were not included.
+
+---
+
+## 🚀 Future Improvements
 - Compare exam months with non-exam months
-- Add mood, energy, or focus scores for deeper behavioral analysis
+- Introduce mood, energy, or focus ratings
 - Automate data collection
 - Expand dataset to multiple participants
 - Build an interactive dashboard using Tableau, Power BI, or Streamlit
 
 ---
 
-## Repository Contents
+## 📁 Repository Contents
 - `/data` – Raw dataset (CSV)
-- `/analysis` – Python analysis script
-- `/visuals` – Generated charts and figures (to be added)
+- `/analysis` – Python analysis scripts
+- `/visuals` – Generated charts and figures
 
 ---
