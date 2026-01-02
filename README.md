@@ -91,12 +91,12 @@ The analysis focuses on:
 
 ## 📈 Visualizations
 The following visualizations were created to support analytical insights:
-- Sleep duration trend over time
-- Curriculum study (exam prep) vs course study trends
-- Leisure time trend
-- Study efficiency over time
-- Balance score
-- Stacked bar chart of total productive study hours
+- ![Sleep duration trend over time](visuals/Sleep%20Trend.png)
+- ![Curriculum study (exam prep) vs course study trends](visuals/Study%20Trends.png)
+- ![Leisure time trend](visuals/Leisure%20Time%20Trend.png)
+- ![Study efficiency over time](visuals/Focus%20Ratio%20Over%20Time.png)
+- ![Balance score](visuals/Balance%20Score.png)
+- ![Stacked bar chart of total productive study hours](visuals/Productive%20Hours.png)
 
 Each visualization is designed to answer a specific analytical question and support data-driven storytelling.
 
@@ -143,24 +143,12 @@ Exam periods lead to intentional reallocation of time toward short-term academic
 
 ---
 
-## 💡 Key Insights (Summary)
-High-level insights observed from the analysis include:
-- Exam preparation hours increased significantly around exam dates, while online course study time showed greater variability.
-- Leisure time generally decreased during peak exam periods, suggesting intentional behavioral trade-offs.
-- High curriculum-study days were often associated with reduced sleep and lower leisure time.
-- Weeks with clustered exams showed the highest study intensity and the lowest balance scores.
-- Long-term learning (online course study) was deprioritized during peak exam stress, highlighting opportunity costs during short-term academic pressure.
-
-(*Detailed insights are supported by visualizations and statistical outputs in the analysis scripts.*)
-
----
-
 ## ⚠️ Limitations
 - Dataset represents a single individual and may not generalize broadly.
 - November is an exam-heavy month, introducing seasonal bias.
 - Data is self-reported and subject to measurement error.
 - Academic performance outcomes (e.g., exam scores) were not included.
-- Amateur data analysis (I am still learning, and I just wanted to test my analysis skills)
+- Analysis performed as a learning project while developing data analytics skills
 
 ---
 
