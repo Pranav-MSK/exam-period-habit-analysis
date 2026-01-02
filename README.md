@@ -28,7 +28,8 @@ Specifically:
 - **Source:** Self-tracked data recorded using Google Sheets  
 - **Time Period:** November 2025 (30 days)  
 - **Granularity:** Daily  
-- **Context:** Semester examination month  
+- **Context:** Semester examination month habit (hrs) recorded
+- *Note: I use my phone and laptop for studying, so the curriculum and course study hours are also the time spent with a screen*
 
 ### Tracked Variables
 
@@ -101,6 +102,47 @@ Each visualization is designed to answer a specific analytical question and supp
 
 ---
 
+## 💡 Final Insights (Detailed)
+
+This analysis explored how daily habits shifted during a semester examination month by examining sleep, exam preparation, online course study, and leisure behavior. Several clear patterns emerged:
+
+**1. Exam Period Significantly Reshaped Time Allocation**  
+During November, time was reallocated primarily toward **curriculum study (exam preparation)**. Curriculum study hours increased noticeably on and around official exam dates. Long-term online course study became more inconsistent and was often deprioritized during peak exam periods. Leisure time generally declined near exam days, indicating intentional trade-offs under academic pressure.
+
+**2. Exam Days vs Non-Exam Days Show Distinct Behavior**  
+Comparing exam days with non-exam days revealed clear contrasts:
+- Curriculum study hours were substantially higher on exam days.
+- Leisure time was consistently lower on exam days.
+- Sleep showed a mild decline around exams, indicating partial sacrifice of recovery.
+
+These differences highlight how academic pressure changes daily routines.
+
+**3. Trade-Offs Between Productivity and Leisure**  
+Correlation analysis revealed:
+- Higher curriculum study was associated with lower leisure time.
+- Higher leisure usage corresponded with lower total productive study.
+- Sleep showed a weaker trade-off with either productivity or leisure.
+
+This suggests that leisure is typically reduced to make room for study during exams.
+
+**4. Focus and Efficiency Under Exam Pressure**  
+A Focus Ratio metric (productive study / total screen engagement) was used. Focus ratios peaked during exam-heavy periods, indicating that screen engagement was more likely to be used for productive purposes rather than passive leisure.
+
+**5. Balance Highlighted Sustainable vs Strained Days**  
+A balance score (sleep + productive study − leisure) showed:
+- Balanced days had moderate study and adequate sleep.
+- Strained days (low balance) had very high study and low leisure and sleep.
+
+This reveals that maximum productivity does not always align with sustainable behavior.
+
+**Overall Conclusion:**  
+Exam periods lead to intentional reallocation of time toward short-term academic performance, often at the expense of leisure and long-term learning. While study efficiency improves under pressure, sustained imbalance may carry long-term recovery costs.
+
+**Key Takeaway:**  
+> Academic performance peaks during exam periods are driven more by focus and reduced leisure than by extended screen hours alone.
+
+---
+
 ## 💡 Key Insights (Summary)
 High-level insights observed from the analysis include:
 - Exam preparation hours increased significantly around exam dates, while online course study time showed greater variability.
@@ -128,12 +170,5 @@ High-level insights observed from the analysis include:
 - Automate data collection
 - Expand dataset to multiple participants
 - Build an interactive dashboard using Tableau, Power BI, or Streamlit
-
----
-
-## 📁 Repository Contents
-- `/data` – Raw dataset (CSV)
-- `/analysis` – Python analysis scripts
-- `/visuals` – Generated charts and figures
 
 ---
