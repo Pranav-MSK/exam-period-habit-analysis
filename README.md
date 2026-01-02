@@ -57,9 +57,7 @@ These dates are used as contextual markers for comparative analysis.
   - NumPy – Data manipulation, statistics, and feature engineering
   - Matplotlib – Data visualization
 - **Calendar module** – Calendar-accurate weekly grouping
-
-This project aligns closely with the analytical workflow taught in the **Google Data Analytics Professional Certificate**.
-
+- **Google Colab** - For running the analysis scripts
 ---
 
 ## 🧹 Data Cleaning & Processing
@@ -96,8 +94,8 @@ The following visualizations were created to support analytical insights:
 - Curriculum study (exam prep) vs course study trends
 - Leisure time trend
 - Study efficiency over time
+- Balance score
 - Stacked bar chart of total productive study hours
-- Weekly averages based on calendar weeks
 
 Each visualization is designed to answer a specific analytical question and support data-driven storytelling.
 
@@ -120,6 +118,7 @@ High-level insights observed from the analysis include:
 - November is an exam-heavy month, introducing seasonal bias.
 - Data is self-reported and subject to measurement error.
 - Academic performance outcomes (e.g., exam scores) were not included.
+- Amateur data analysis (I am still learning, and I just wanted to test my analysis skills)
 
 ---
 
