@@ -91,12 +91,12 @@ The analysis focuses on:
 
 ## 📈 Visualizations
 The following visualizations were created to support analytical insights:
-- ![Sleep duration trend over time](visuals/Sleep%20Trend.png)
-- ![Curriculum study (exam prep) vs course study trends](visuals/Study%20Trends.png)
-- ![Leisure time trend](visuals/Leisure%20Time%20Trend.png)
-- ![Study efficiency over time](visuals/Focus%20Ratio%20Over%20Time.png)
-- ![Balance score](visuals/Balance%20Score.png)
-- ![Stacked bar chart of total productive study hours](visuals/Productive%20Hours.png)
+- Sleep duration trend over time ![📈](visuals/Sleep%20Trend.png)
+- Curriculum study (exam prep) vs course study trends ![📈](visuals/Study%20Trends.png)
+- Leisure time trend ![📈](visuals/Leisure%20Time%20Trend.png)
+- Study efficiency over time ![📈](visuals/Focus%20Ratio%20Over%20Time.png)
+- Balance score ![📈](visuals/Balance%20Score.png)
+- Stacked bar chart of total productive study hours ![📊](visuals/Productive%20Hours.png)
 
 Each visualization is designed to answer a specific analytical question and support data-driven storytelling.
 
