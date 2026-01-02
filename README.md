@@ -102,7 +102,7 @@ Each visualization is designed to answer a specific analytical question and supp
 
 ---
 
-## 💡 Final Insights (Detailed)
+## 💡 Final Insights
 
 This analysis explored how daily habits shifted during a semester examination month by examining sleep, exam preparation, online course study, and leisure behavior. Several clear patterns emerged:
 
